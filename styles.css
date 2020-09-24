@@ -8,6 +8,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+img {
+  display: block;
+  width: 100%;
+}
+
 
 @font-face {
   font-family:  "HK Grotesk";
@@ -23,9 +28,91 @@ body {
 	color: #333333;
 }
 
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   position: fixed;
   top: 36px;
   left: 36px;
   z-index: 1;
 }
+
+section {
+  background-color: #c8dee0;
+  min-height: 100vh;
+  padding: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.content {
+  position: relative;
+}
+
+div.square {
+  width: 100px;
+  height: 100px;
+  background-color: #d54156;
+  
+  position: absolute;
+  top: 50px;
+  left: -50px;
+}
+
+div.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #5982a0;
+  
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
+  
+  border-radius: 50%;
+}
+
+div.content img {
+  position: relative;
+}
+
+section.s2 {
+  background-color: #c5c5c5;
+}
+
+section.s2 div.square {
+  background-color: #d6ac35;
+}
+
+section.s2 div.circle {
+  background-color: #be3c52;
+}
+
+section.s3 {
+  background-color: #292121;
+}
+
+section.s3 div.square {
+  background-color: #5f3736;
+}
+
+section.s3 div.circle {
+  background-color: #6e5f67;
+}
+
+section.s4 {
+  background-color: #f3f1f2;
+}
+
+section.s4 div.square {
+  background-color: #d54156;
+}
+
+section.s4 div.circle {
+  background-color: #5982a0;
+}
+
